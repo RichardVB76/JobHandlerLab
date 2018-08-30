@@ -29,7 +29,7 @@ public class Position {
 	public void setRank(int reqRank) {
 		this.reqRank = reqRank;
 	}
-
+	//Add Code Here [You have to use If/Else to get graded]
 	public double getSalary() {
 		return hSalary;
 	}
@@ -66,10 +66,15 @@ public class Position {
 	 * @return 
 	 */
 	public double getYearlySalary() {
+		double totalYearly;
 		
-		//Add Code Here [You have to use If/Else to get graded]
+		if(jobType) {
+			totalYearly = hSalary*40*4.5*12;
+		} else {
+			totalYearly = hSalary*20*4.5*12;
+		}
 		
-		return 0; //Temporal Return
+		return totalYearly;	
 		
 	}
 }
